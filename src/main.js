@@ -11,7 +11,7 @@ let streakCounter = {
     globalCounter: 1
 };
 const btnTypes = ['start', 'rest', 'longRest', 'pause'];
-https://github.com/gOdNtavas/pomoMinimalistic.github.io/tree/master/assets
+
 // Timer sounds
 const blipClick = new Audio('https://github.com/gOdNtavas/pomoMinimalistic.github.io/blob/master/assets/blip.mp3?raw=true');
 const soundFinish = new Audio('https://github.com/gOdNtavas/pomoMinimalistic.github.io/blob/master/assets/soundFinish.mp3?raw=true')
