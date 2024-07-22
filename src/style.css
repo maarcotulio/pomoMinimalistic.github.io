@@ -1,0 +1,214 @@
+:root {
+    --clr-background: #24273a;
+    --clr-darkerBackground: #181926;
+    --clr-darkerBackgroundTransparent: rgba(30, 32, 48, 0.92);
+    --clr-text-1: #cad3f5;
+    --clr-btn-start: #ee99a0;
+    --clr-btn-pause: #f5a97f;
+    --clr-btn-rest: #7dc4e4;
+    --clr-btn-longRest: #a6da95;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--clr-text-1);
+    height: 100vh;
+}
+
+.background {
+    background-color: var(--clr-background);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pomo {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* Streak and Config */
+
+.container-streak-config {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.streakCounter {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.toggleConfig {
+    cursor: pointer;
+}
+
+#gear {
+    height: 20px;
+    width: 20px;
+    margin-left: 450px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.display-config {
+    display: none;
+}
+
+.close {
+    width: 15px;
+    height: 15px;
+    margin: 25px 0px 25px 420px;
+}
+
+.config-container {
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    background-color: var(--clr-darkerBackgroundTransparent);
+    height: auto;
+    min-height: 200px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.pomo-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-content: center;
+    column-gap: 30px;
+    margin-left: 20px;
+}
+
+.pomo-values label {
+    margin-left: 5px;
+}
+
+.title-timer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    max-width: 100px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+.line {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-save {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Timer */
+
+.container-timer {
+    background-color: var(--clr-darkerBackground);
+    width: 500px;
+    margin: 20px auto 20px;
+    min-width: 500px;
+    height: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.container-timer h1 {
+    text-align: center;
+    height: 100%;
+    font-size: 8em;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 85px;
+}
+
+.skip {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.start {
+    background-color: var(--clr-btn-start);
+}
+
+.pause {
+    background-color: var(--clr-btn-pause);
+}
+
+.rest {
+    background-color: var(--clr-btn-rest);
+}
+
+.longRest {
+    background-color: var(--clr-btn-longRest);
+}
