@@ -13,8 +13,8 @@ let streakCounter = {
 const btnTypes = ['start', 'rest', 'longRest', 'pause'];
 
 // Timer sounds
-const blipClick = new Audio('../assets/blip.mp3');
-const soundFinish = new Audio('https://github.com/gOdNtavas/pomoMinimalistic.github.io/blob/main/assets/soundFinish.mp3?raw=true')
+const blipClick = new Audio('https://github.com/gOdNtavas/pomoMinimalistic.github.io/blob/master/assets/blip.mp3?raw=true');
+const soundFinish = new Audio('https://github.com/gOdNtavas/pomoMinimalistic.github.io/blob/master/assets/soundFinish.mp3?raw=true')
 
 // Gear variable
 const gear = document.querySelectorAll('.toggleConfig');
